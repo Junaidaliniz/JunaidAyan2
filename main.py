@@ -12,8 +12,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 BOT_TOKEN = "8511856963:AAE91s3IgrOmLB0K_8m1vciFB9m1FVbyDEs"
-ADMIN_ID = 8511856963
-ADMINS = [8511856963]
+ADMIN_ID = 7919071755
+ADMINS = [7919071755]
 DEFAULT_SMS_API = "https://api-node-js-new-production-b09a.up.railway.app/api?type=sms"
 
 # =================== IN-MEMORY STORAGE ===================

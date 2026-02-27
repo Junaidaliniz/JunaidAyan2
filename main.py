@@ -275,7 +275,7 @@ def build_group_message(otp, counter):
     otp_code = extract_otp(otp["message"])
     svc_icon = get_service_icon(otp["sender"])
 
-    text = f"{counter} {country['flag']} <b>New {country['name']} {otp['sender']} OTP!</b>\n\n"
+    text = f"{country['flag']} <b>New {country['name']} {otp['sender']} OTP!</b>\n\n"
     text += f"<blockquote>\U0001f570 Time: {otp['timestamp']}</blockquote>\n"
     text += f"<blockquote>{country['flag']} Country: {country['name']}</blockquote>\n"
     text += f"<blockquote>{svc_icon} Service: {otp['sender']}</blockquote>\n"
@@ -551,7 +551,7 @@ async def callback_handler(update: Update, context):
         kb = InlineKeyboardMarkup([
             [InlineKeyboardButton("\U0001f504 Change Number", callback_data=f"get|{country}"),
              InlineKeyboardButton("\U0001f30d Change Country", callback_data="change")],
-            [InlineKeyboardButton("\U0001f4f1 OTP Group", url="https://t.me/+ZAtSLrWm7XMxNjc8")],
+            [InlineKeyboardButton("\U0001f4f1 OTP Group", url="https://t.me/GRTEMPNUMOTP")],
         ])
         text = (f"{flag} <b>Your Number ({flag} {country}):</b>\n\n"
                 f"\U0001f4de <code>{number['phone']}</code>\n\n"
